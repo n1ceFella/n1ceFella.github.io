@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Changa:wght@800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/myScript.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <!-- <div class="header_logo">MoGo</div> -->
+                    <nav class="nav">
+                        <a class="nav_link" href="#about">ABOUT</a> 
+                        <a class="nav_link" href="#education">EDUCATION</a> 
+                        <a class="nav_link" href="#contacts">CONTACTS</a>
+                    </nav>
+            </div>
+        </div>
+    </header>
+    <div class="first_screen">
+        <div class="container">
+            <div class="first_inner">
+                <div class="myPhoto">
+                    <img src="resources/000.jpg" width="243" height="300" alt="photo">
+                </div>
+                <div class="full_name">
+                    <h1>Volodymyr Labliuk</h1>
+                </div>
+                <div class="description">
+                    <h1>Software Developer</h1>
+                </div>
+                <div class="buttons">
+                    <!-- <a class="btn" href="#">Resume</a> -->
+                    <a class="btn" href="#hire">Contact Me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="second_screen">
+        <a id="about"></a>
+        <div class="container">
+                <div class="second_inner">
+                    <div class="sketch">
+                        <img src="resources/Panda_png.png" alt="sketch">
+                    </div>
+                    <div class="about_me">
+                        <div class="about_me_text">
+                            <h1>About Me</h1>
+                            <span>
+                                Hi, my name is Vova Lablyuk and I am a beginner programmer.
+                                 I became interested in programming a few years ago,
+                                  because I always wanted to create something interesting
+                                   with my own hands. I started with Java. Back then I didn't really
+                                    know where to start, but I definitely made the right choice.
+                                     I love web development and want to become a professional full
+                                      stack developer. This is my portfolio site that I created myself.
+                            </span>
+                        </div>
+                        <div class="about_me_info">
+                            <h1>Basic Information</h1>
+                            <div class="age">
+                             <span class="info_span">AGE: </span>
+                             <span>30</span>
+                            </div>
+                            <div class="email">
+                                <span class="info_span">EMAIL: </span>
+                                <span>vlabliuk@myseneca.ca</span>
+                            </div>
+                            <div class="language">
+                                <span class="info_span">LANGUAGE: </span>
+                                <span>Englsih, Russian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="motion-demo">
+
+                    </div>
+                </div> 
+        </div>
+    </div>
+    <div class="third_screen">
+        <a id="education"></a>
+        <div class="container">
+                <div class="third_inner">
+                    <div class="geek">
+                        <img src="resources/panda-nerd-512x512.png" alt="geek">
+                    </div>
+                    <div class="education_inner">
+                        <div class="degree">
+                            <div class="degree_type">
+                                <h1>
+                                    2007 - 2012
+                                </h1>
+                                <h1>
+                                    Bachelor's Degree
+                                </h1>
+                            </div>
+                            <div class="degree_info">
+                                <h1 id="first_edu">
+                                    Bachelor's Degree
+                                </h1>
+                                <p>
+                                    Odessa National Maritime University
+                                </p>
+                                <p>
+                                    Marine Engineering
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="degree">
+                            <div class="degree_type">
+                                <h1>
+                                    2021-2022
+                                </h1>
+                                <h1>
+                                    Ontario College Diploma
+                                </h1>
+                            </div>
+                            <div class="degree_info">
+                                <h1 id="second_edu">
+                                    Ontario College Diploma
+                                </h1>
+                                <p>
+                                    Seneca College
+                                </p>
+                                <p>
+                                    Computer Programming
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    </div>
+    <div class="fourth_screen">
+        <a id="hire"></a>
+        <div class="container">
+            <div class="fourth_inner">
+                <div class="weird">
+                    <!-- <img id="weird" src="resources/weird.png" alt="panda"> -->
+                </div>
+                <div class="form">
+                    <form id="hire_form" method="post" action="https://httpbin.org/post">
+                            <label for="name">Full name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="Full name" required><br>
+                            <label for="address">Last name:</label><br>
+                            <input type="text" id="address" name="address" placeholder="Address" required><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Email" required><br>
+                            <label for="city">City:</label><br>
+                            <input list="cities" id="city" name="city" placeholder="City" required><br>
+                            <datalist id="cities">
+                                <option value="Ottawa">
+                                <option value="Toronto">
+                                <option value="Vancouver">
+                                <option value="Montreal">
+                                <option value="Edmonton">
+                                <option value="Calgary">
+                              </datalist>
+                            <label for="post">Postal Code:</label><br>
+                            <input type="text" id="post" name="postal" placeholder="A1A 1A1" required><br><br>
+                            <div id="hidden_input">
+
+                            </div>
+                            <input type="hidden" id="hidden_hire" name="hidden_hire">
+                              <input type="radio" id="comment" name="message" value="Comment" onclick="showComment()">
+                              <label for="comment">Comment</label><br>
+                              <input type="radio" id="question" name="message" value="Question" onclick="showQuestion()">
+                              <label for="question">Question</label><br>
+                              <input type="radio" id="hire" name="message" value="Hire" onclick="showHire()">
+                              <label for="hire">Hire</label><br><br>
+                            <input type="hidden" id="student_name" name="student_name" value="Volodymyr Labliuk">
+                            <input type="hidden" id="student_id" name="student_id" value="147302202">
+                            <input type="submit" id="submit" name="sumbit" value="Submit">
+                
+                    </form>
+                </div>
+
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fifth_screen">
+        <a id="contacts"></a>
+        <div class="container">
+            <div class="fifth_contacts">
+                <div class="fifth_networks">
+                    <div class="fifth_text">
+                        <p>Follow Me...</p>
+                    </div> 
+                    <div class="contact_icons">
+                        <a href="https://www.facebook.com/vovchik.lablyuk"><img id="fc" src="resources/fc.png" alt="fc"></a>
+                        <a href="https://www.instagram.com/vovchik_labliuk/"><img id="inst" src="resources/inst.png" alt="inst"></a>
+                        <a href="https://www.youtube.com/channel/UCrRNlxAyvSH-HAZqmdHyvYQ"><img id="youtube" src="resources/you.png" alt="youtube"></a>
+                        <a href="https://www.linkedin.com/in/volodymyr-labliuk-975b88184/"><img id="lnk" src="resources/lnk.png" alt="lnk"></a>
+                    </div>
+                </div>
+                <div class="fifth_address">
+                        <div id="tel">
+                            <p>Tel. +1(123)123-32-31</p>
+                        </div>
+                        <div id="eml">
+                            <p>Email: vlabliuk@myseneca.ca</p>
+                        </div>
+                        <div id="loc">
+                            <p>Address: 77 King Street W</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
