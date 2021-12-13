@@ -5,6 +5,9 @@
 window.onload = function(){
     var regex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d[ ]*$/;
     var form = document.getElementById("hire_form");
+    var hidden_hire = document.getElementById("hidden_hire");
+    hidden_hire.defaultValue = 0;
+
 
     form.onsubmit = function(){
         var post = form.postal.value;
