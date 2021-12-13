@@ -186,8 +186,8 @@ h1,h2,h3,h4,h5,h6{
   justify-content: center;
 }
 #panda_tell{
-  max-width: 224px;
-  max-height: 224px;
+  max-width: 20%;
+  max-height: 30%;
 }
 .about_me{
   margin: auto;
