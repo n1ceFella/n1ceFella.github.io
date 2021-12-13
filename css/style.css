@@ -178,11 +178,16 @@ h1,h2,h3,h4,h5,h6{
   background-size: cover;
 }
 .sketch{
-  height: 240px;
+  /* height: 240px; */
+
   position: relative;
   top: 70px;
   display: flex;
   justify-content: center;
+}
+#panda_tell{
+  max-width: 224px;
+  max-height: 224px;
 }
 .about_me{
   margin: auto;
